@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn, OneToMany } from "typeorm";
 import { CoreEntity } from "./core.entity";
+import { TodoEntity } from "./todo.entity";
 
 @Entity("user")
 export class UserEntity extends CoreEntity {
